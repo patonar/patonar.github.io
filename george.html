@@ -9,11 +9,33 @@
             -webkit-text-size-adjust: none;
             touch-action: pan-y;
         }
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 80%; /* Adjust width to ensure it fits */
+            height: auto;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #333;
+            text-align: center;
+        }
 </style>
 </head>
 <body>
     <!-- Image with pinch-to-zoom disabled -->
-    <div class="no-zoom">
+    <div>
         <img src="https://images.ctfassets.net/hrltx12pl8hq/3Mz6t2p2yHYqZcIM0ic9E2/3b7037fe8871187415500fb9202608f7/Man-Stock-Photos.jpg" alt="Sample Image">
         <p>Pinch-to-zoom is disabled on the image.</p>
     </div>
